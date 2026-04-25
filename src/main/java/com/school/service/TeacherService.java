@@ -1,0 +1,13 @@
+package com.school.service;
+
+import com.school.dto.request.TeacherRequest;
+import com.school.dto.response.TeacherResponse;
+import java.util.List;
+
+public interface TeacherService {
+    List<TeacherResponse> findAll();
+    TeacherResponse findById(Long id);
+    TeacherResponse create(TeacherRequest request);
+    TeacherResponse update(Long id, TeacherRequest request);
+    void delete(Long id);
+}
